@@ -26,7 +26,7 @@ async def fetch_med_info(client, message):
         reply = f"**ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ :** {e}"
     
     button = InlineKeyboardMarkup(
-        [[InlineKeyboardButton("➕ Add Me", url=f"https://t.me/{client.me.username}?startgroup=true")]]
+        [[InlineKeyboardButton("ᴧηsᴡєʀ ʙʏ", url=f"https://t.me/Sonali_Music_bot?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users")]]
     )
     
     await message.reply_text(reply, reply_markup=button)
