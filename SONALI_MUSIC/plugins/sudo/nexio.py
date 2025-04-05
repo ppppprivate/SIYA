@@ -52,7 +52,7 @@ channel = ["channel"]
 
 # ========================================= #
 
-@app.on_message(filters.command(["lpha", "onali"], prefixes=["A", "S"]) & admin_filter)
+@app.on_message(filters.command(["osu", "eow"], prefixes=["T", "M"]) & admin_filter)
 async def restriction_app(_, message):
     reply = message.reply_to_message
     chat_id = message.chat.id
