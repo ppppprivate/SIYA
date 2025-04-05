@@ -8,7 +8,7 @@ from SONALI_MUSIC import app as Sona
 mongo_url_pattern = re.compile(r'mongodb(?:\+srv)?:\/\/[^\s]+')
 
 
-@Sona.on_message(filters.command("mongochk"))
+@Sona.on_message(filters.command("mongo"))
 async def mongo_command(client, message: Message):
     if len(message.command) < 2:
         await message.reply("Please enter your MongoDB URL after the command. Example: /mongochk your_mongodb_url")
